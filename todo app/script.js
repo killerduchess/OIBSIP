@@ -9,7 +9,7 @@ class Task {
     static display() {
         const tasks_container = document.getElementById('tasks');
         let _tasks = '';
-        tasks.forEach((task, index) => {
+        tasks.forEach((task) => {
             _tasks += `                                         
                 <div class="task-item ${task.state === "show" ? 'mt-2 d-flex justify-content-between align-items-center' : 'd-none'}">
                     <div class="task-name">
